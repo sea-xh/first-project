@@ -8,12 +8,12 @@ import { isFuntion, isObject } from '../utils/index';
 
 const { isValidElement, cloneElement } = React;
 const { forEach } = React.Children;
-console.log(forEach);
 
 const isKeepliveRouter = (child) => child.type.__componentType === KEEPLIVE_ROUTE_COMPONENT;
 
 class KeepliveRouterSwitch extends Switch {
 	constructor(props, ...arg) {
+		console.log(props,111,arg,222)
 		super(props, ...arg);
 		const { ishasRouterSwitch, children, cacheDispatch } = props;
 		const __render = this.render;

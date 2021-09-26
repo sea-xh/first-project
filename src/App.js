@@ -2,28 +2,7 @@ import { BrowserRouter as Router, Route, useHistory, Redirect } from 'react-rout
 import { KeepaliveRouterSwitch, KeepaliveRoute } from './component';
 import Detail from './page/input';
 import TheIndex from './page/home';
-import myPromise from './promise';
 
-// new myPromise((resolve, reject) => {
-// 	// resolve('解决');
-// 	// reject('拒绝');
-// }).then(
-// 	(res) => {
-// 		// console.log(res, 'then');
-// 	},
-// 	(reason) => {
-// 		// console.log(reason, 'catch');
-// 		return '嘻嘻哈哈';
-// 	},
-// );
-
-// const p1 = new myPromise((resolve, reject) => {
-// 	resolve('解决1');
-// });
-
-// const p2 = new myPromise((resolve, reject) => {
-// 	resolve('解决2');
-// });
 
 const menusList = [
 	{
@@ -64,7 +43,6 @@ const App = () => {
 				<KeepaliveRouterSwitch>
 					<KeepaliveRoute path="/detail" component={Detail}></KeepaliveRoute>
 					<Route path={'/home'} component={TheIndex} />
-					<Redirect from="/*" to="/home" />
 				</KeepaliveRouterSwitch>
 			</Router>
 		</div>

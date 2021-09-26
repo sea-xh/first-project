@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Event from './event';
+import Tree from './Tree';
 
-ReactDOM.render(<React.StrictMode>{<Event />}</React.StrictMode>, document.getElementById('root'));
+ReactDOM.render(<React.StrictMode>{<Tree />}</React.StrictMode>, document.getElementById('root'));
